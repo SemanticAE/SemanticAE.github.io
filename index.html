@@ -119,6 +119,8 @@
   <script defer src="static/js/bulma-slider.min.js"></script>
   <script defer src="static/js/index.js"></script>
   
+
+
   <!-- Structured Data for Academic Papers -->
   <script type="application/ld+json">
   {
@@ -341,7 +343,7 @@
                     <div class="publication-links">
                          <!-- Update with your arXiv paper ID -->
                       <span class="link-block">
-                        <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
+                        <a href="https://nips.cc/virtual/2025/poster/116399" target="_blank"
                         class="external-link button is-normal is-rounded is-dark">
                         <span class="icon">
                           <i class="fas fa-file-pdf"></i>
@@ -396,11 +398,12 @@
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
-      <video poster="" id="tree" autoplay controls muted loop height="100%" preload="metadata">
-        <source src="static/videos/forklift.mp4" type="video/mp4">
-      </video>
+      <!-- <video poster="" id="tree" autoplay controls muted loop height="100%" preload="metadata">
+        <source src="static/images/tricycle, trike, velocipede.gif" type="video/gif">
+      </video> -->
+      <img src="static/images/tricycle, trike, velocipede.gif" alt="Illustration of SemanticAE" loading="lazy" style="width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);"/>
       <h2 class="subtitle has-text-centered">
-        This video demonstrates a generated 3D adversarial forklift. Our method creates semantically consistent 3D objects that can effectively fool vision models when rendered from multiple viewpoints.
+        This video demonstrates a generated 3D adversarial tricycle. Our method (Adv Sample with ResAdv-DDIM) creates semantically consistent 3D adversarial objects <b>directly from instructions</b>, and can effectively fool vision models when rendered from multiple viewpoints.
       </h2>
     </div>
   </div>
@@ -502,6 +505,14 @@
     <div class="container">
       <h2 class="title is-3 has-text-centered">Generated 3D Adversarial Examples</h2>
       <div id="results-carousel" class="carousel results-carousel">
+        <div class="item item-video0">
+          <video poster="" id="video2" controls muted loop height="100%" preload="metadata">
+            <source src="static/videos/forklift.mp4" type="video/mp4">
+          </video>
+          <h2 class="subtitle has-text-centered" style="margin-top: 1rem;">
+            Generated 3D adversarial forklift, showing the multi-view robust attack capability.
+          </h2>
+        </div>
         <div class="item item-video1">
           <video poster="" id="video1" controls muted loop height="100%" preload="metadata">
             <source src="static/videos/volcano.mp4" type="video/mp4">
